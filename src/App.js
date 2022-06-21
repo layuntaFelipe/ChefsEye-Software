@@ -1,5 +1,5 @@
 import './App.css';
-import QRCode from './pages/QRCode';
+import QRCodePage from './pages/QRCodePage';
 import Panel from './pages/Panel';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Panel/>
-      <QRCode/>
+      <QRCodePage/>
     </>
   );
 }

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+.containerQR {
+  margin: 6rem 10rem 6.5rem 10rem;
+}
+#qrcodeIMG {
+  display: block;
+  width: 25rem;
+  height: auto;
+  float: left;
+  margin-right: 10rem;
+  padding-top: 2rem;
+}
+.QRInfo h3 {
+  font-size: 3.5rem;
+  font-family: "Abel", sans-serif;
+  font-weight: 200;
+  color: #0B1B35;
+}
+.QRInfo p {
+  color: #ef233c;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+label{
+  display: inline-block;
+  margin: 3rem 3rem 3rem 0;
+}
+input {
+  display: block;
+  outline: none;
+  border: none;
+  height: 2rem;
+  background: #F5F7F8;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.07), 0px 4.7776px 3.4221px rgba(0, 0, 0, 0.0503198), 0px 2.3363px 7.869px rgba(0, 0, 0, 0.0417275), 0px 2.5216px 1.0172px rgba(0, 0, 0, 0.035);
+  border-radius: 0.3rem;
+}
+.buttons{
+  display: block;
+}
+button{
+  outline: none;
+  border: none;
+  background-color: #ef233c;
+  color: #F5F7F8;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.7rem;
+  margin: 0 2rem 0 0;
+}
+a {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  border: 1px solid #ef233c;
+  color: #ef233c;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.7rem;
+}

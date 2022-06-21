@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: 'Aleo', sans-serif;
 }
 body {
-  background-color: #EDF2F4;
+  background-color: #edf2f4;
 }
