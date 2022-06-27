@@ -32,7 +32,7 @@ const QRCodePage = () => {
             </label>
             <div className="buttons">
               <button onClick={GenerateQRCode}>Generate</button>
-              <a href={qrcode} download='qrcode.png'>Download</a>
+              <a href={qrcode} download={`${url}.png`}>Download</a>
             </div>
           </div>
         </div>

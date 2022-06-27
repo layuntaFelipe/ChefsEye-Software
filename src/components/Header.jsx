@@ -19,10 +19,6 @@ function Header({itemOn}) {
     setAnchorEl(null);
   };
 
-  const checkForActive = () => {
-    console.log('hi');
-  }
-
   const headerLinkNames = ['Panel', 'Manage', 'Kitchen', 'Menu', 'Create QR'];
 
   const id = open ? 'simple-popover' : undefined;
@@ -34,7 +30,7 @@ function Header({itemOn}) {
         {
           headerLinkNames.map((links, index) => {
             return (
-              <li className={index === itemOn ? 'active' : ''} key={index} onMouseOver={checkForActive}>{links}</li>
+              <li className={index === itemOn ? 'active' : ''} key={index}>{links}</li>
             );
           })
         }
