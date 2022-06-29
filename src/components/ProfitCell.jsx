@@ -2,7 +2,6 @@ import React from 'react'
 import graph from '../images/Graph.svg';
 import graphNeg from '../images/Graph-neg.svg';
 import helpIcon from '../images/Help.svg';
-import '../panelStyle.css';
 
 function ProfitCell({price, isPositive}) {
   return (

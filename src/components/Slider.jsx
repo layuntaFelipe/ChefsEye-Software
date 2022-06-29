@@ -1,5 +1,4 @@
 import React from 'react';
-import '../panelStyle.css';
 import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
 import InfoBox from './InfoBox';
 import {lastOrders} from '../data.js';

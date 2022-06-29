@@ -1,5 +1,4 @@
 import React from 'react'
-import '../panelStyle.css';
 
 function InfoBox({name, price, time, image}) {
   return (

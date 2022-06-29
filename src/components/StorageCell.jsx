@@ -1,6 +1,5 @@
 import React from 'react'
 import helpIcon from '../images/Help.svg';
-import '../panelStyle.css';
 import { HiMinus, HiPlus} from 'react-icons/hi';
 import { FaDatabase } from 'react-icons/fa';
 

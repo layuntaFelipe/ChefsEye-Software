@@ -1,7 +1,6 @@
 import React from 'react'
 import graph from '../images/Graph.svg';
 import helpIcon from '../images/Help.svg';
-import '../panelStyle.css';
 
 function ManageCell() {
   return (

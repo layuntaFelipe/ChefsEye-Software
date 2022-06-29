@@ -1,5 +1,4 @@
 import React from 'react';
-import '../panelStyle.css';
 import personIcon from '../images/personIcon.svg';
 import logo from '../images/logo.svg';
 import Avatar from '@mui/material/Avatar';

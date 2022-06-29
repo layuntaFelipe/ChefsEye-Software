@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../components/Header';
 import QRCode from 'qrcode';
 import {useState} from 'react'
-import '../styles/qrcode.css';
 
 const QRCodePage = () => {
 

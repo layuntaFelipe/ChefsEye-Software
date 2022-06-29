@@ -1,6 +1,5 @@
 import React from 'react'
 import arrowDown from '../images/arrowDown.svg';
-import '../panelStyle.css';
 import ProfitCell from './ProfitCell';
 import MenuCell from './MenuCell';
 import StorageCell from './StorageCell';
