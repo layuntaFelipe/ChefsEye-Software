@@ -81,6 +81,9 @@ export const menuArray = [
     new Food('3',`Chicken Wings`, ['bread', 'burger', 'lettuce', 'tomato'], 10.99, 10, require('./images/chicken-wings.svg').default),
     new Food('4',`Chicken Salad`, ['bread', 'burger', 'lettuce', 'tomato'], 24.99, 10, require('./images/salad-chicken.svg').default),
     new Food('4',`Coke Can`, ['bread', 'burger', 'lettuce', 'tomato'], 3.99, 10, require('./images/coke-can.svg').default),
+    new Food('4',`Coke Can`, ['bread', 'burger', 'lettuce', 'tomato'], 3.99, 10, require('./images/coke-can.svg').default),
+    new Food('4',`Coke Can`, ['bread', 'burger', 'lettuce', 'tomato'], 3.99, 10, require('./images/coke-can.svg').default),
+    new Food('4',`Coke Can`, ['bread', 'burger', 'lettuce', 'tomato'], 3.99, 10, require('./images/coke-can.svg').default),
 ];
 
 export const storageArray = [
