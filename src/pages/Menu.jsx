@@ -7,11 +7,6 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { TextField } from '@mui/material';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Checkbox from '@mui/material/Checkbox';
 
 const Menu = () => {
 
@@ -24,21 +19,6 @@ const Menu = () => {
     const handleClick = () => {
         console.log('Hello');
     }
-
-    const [checked, setChecked] = React.useState([1]);
-
-    const handleToggle = (value) => () => {
-        const currentIndex = checked.indexOf(value);
-        const newChecked = [...checked];
-
-        if (currentIndex === -1) {
-        newChecked.push(value);
-        } else {
-        newChecked.splice(currentIndex, 1);
-        }
-
-        setChecked(newChecked);
-    };
 
   return (
     <>
@@ -65,25 +45,6 @@ const Menu = () => {
                 <div className='inputDishArea'>
                     <TextField id="titleDishName" label="" variant="outlined" placeholder='Title Dish' />
                     <textarea name="description" id="" cols="30" rows="5" placeholder='description'></textarea>
-                    <List dense sx={{ width: '25%', maxWidth: 360 }}>
-                        {[0, 1, 2, 3].map((value) => {
-                            const labelId = `checkbox-list-secondary-label-${value}`;
-                            return (
-                            <ListItem key={value} secondaryAction={
-                                <Checkbox
-                                    edge="end"
-                                    onChange={handleToggle(value)}
-                                    checked={checked.indexOf(value) !== -1}
-                                    inputProps={{ 'aria-labelledby': labelId }}
-                                />
-                                } disablePadding>
-                                <ListItemButton>
-                                    <ListItemText id={labelId} primary={`item ${value + 1}`} />
-                                </ListItemButton>
-                            </ListItem>
-                            );
-                        })}
-                    </List>
                     <FormControl sx={{ m: 1, minWidth: 80 }} id="typeDishMenu">
                         <Select labelId="demo-simple-select-autowidth-label" id="demo-simple-select-autowidth" value={age} onChange={handleChange} autoWidth>
                             <MenuItem value={1}>Soup</MenuItem>
