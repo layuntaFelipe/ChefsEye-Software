@@ -24,6 +24,32 @@ const Menu = () => {
     <>
         <Header itemOn={3} />
         <div className="menuContainer">
+            <div className="infoDish">
+                <div className="titleInfo">
+                    <h5>Dish Info</h5>
+                </div>
+                <div id='imageDish'>Upload Image</div>
+                <div className='inputDishArea'>
+                    <label htmlFor="" className='dishLabel'>Dish Title</label>
+                    <TextField id="titleDishName" label="" variant="outlined"/>
+                    <label htmlFor="" className='dishLabel'>Dish Description</label>
+                    <textarea name="description" id="" cols="30" rows="5"></textarea>
+                    <label htmlFor="" className='dishLabel'>Dish Type</label>
+                    <FormControl sx={{ m: 1, minWidth: 80 }} id="typeDishMenu">
+                        <Select labelId="demo-simple-select-autowidth-label" id="demo-simple-select-autowidth" value={age} onChange={handleChange} autoWidth>
+                            <MenuItem value={1}>Soup</MenuItem>
+                            <MenuItem value={2}>Appetizer</MenuItem>
+                            <MenuItem value={3}>Salad</MenuItem>
+                            <MenuItem value={4}>Main Course</MenuItem>
+                            <MenuItem value={5}>Dessert</MenuItem>
+                            <MenuItem value="other"><em>Other</em></MenuItem>
+                        </Select>
+                    </FormControl>
+                    <label htmlFor="" className='dishLabel'>Dish Price</label>
+                    <p>$</p><TextField id="priceDish" label="" variant="outlined"/>
+                    <button id='createDishBtn'>Create Dish</button>
+                </div>
+            </div>
             <div className="dishContainer">
                 <div className="titleDish">
                     <h5>Dish List</h5>
@@ -35,28 +61,6 @@ const Menu = () => {
                             return <MenuCell name={menuArray[index].name} price={menuArray[index].price} image={menuArray[index].image} key={index}/>;
                         })
                     }
-                </div>
-            </div>
-            <div className="infoDish">
-                <div className="titleInfo">
-                    <h5>Dish Info</h5>
-                </div>
-                <div id='imageDish'></div>
-                <div className='inputDishArea'>
-                    <TextField id="titleDishName" label="" variant="outlined" placeholder='Title Dish' />
-                    <textarea name="description" id="" cols="30" rows="5" placeholder='description'></textarea>
-                    <FormControl sx={{ m: 1, minWidth: 80 }} id="typeDishMenu">
-                        <Select labelId="demo-simple-select-autowidth-label" id="demo-simple-select-autowidth" value={age} onChange={handleChange} autoWidth>
-                            <MenuItem value={1}>Soup</MenuItem>
-                            <MenuItem value={2}>Appetizer</MenuItem>
-                            <MenuItem value={3}>Salad</MenuItem>
-                            <MenuItem value={4}>Main Course</MenuItem>
-                            <MenuItem value={5}>Dessert</MenuItem>
-                            <MenuItem value="other"><em>Other</em></MenuItem>
-                        </Select>
-                    </FormControl>
-                    <p>$</p><TextField id="priceDish" label="" variant="outlined" placeholder='Price'/>
-                    <button id='createDishBtn'>Create Dish</button>
                 </div>
             </div>
         </div>

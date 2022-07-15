@@ -31,7 +31,7 @@ function Header({itemOn}) {
         {
           headerLinkNames.map((links, index) => {
             return (
-              <li><Link className={index === itemOn ? 'active headerLink' : 'headerLink'} key={index} to={headerLinksURL[index]}>{links}</Link></li>
+              <li key={index}><Link className={index === itemOn ? 'active headerLink' : 'headerLink'} to={headerLinksURL[index]}>{links}</Link></li>
             );
           })
         }

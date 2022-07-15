@@ -25,7 +25,7 @@ const QRCodePage = () => {
           <div className="QRInfo clearfix">
             <h3>Create QR Code</h3>
             <p>To create a unique QR code, simply write down the number of the table. In case you want to create a series of QR codes, write the number of the first table and the number of the last table.</p>
-            <label htmlFor="">
+            <label className='qrCodeLabel' htmlFor="">
                 First Number:
                 <input type="text" placeholder='test' value={url} onChange={(event) => {setUrl(event.target.value)}} />
             </label>
