@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import personIcon from '../images/personIcon.svg';
 import logo from '../images/logo.svg';
 import Avatar from '@mui/material/Avatar';
@@ -19,6 +20,7 @@ function Header({itemOn}) {
   };
 
   const headerLinkNames = ['Panel', 'Manage', 'Kitchen', 'Menu', 'Create QR'];
+  const headerLinksURL = ['/', '/manage', '/kitchen', '/menu', '/qrcode'];
 
   const id = open ? 'simple-popover' : undefined;
 
@@ -29,7 +31,7 @@ function Header({itemOn}) {
         {
           headerLinkNames.map((links, index) => {
             return (
-              <li className={index === itemOn ? 'active' : ''} key={index}>{links}</li>
+              <li><Link className={index === itemOn ? 'active headerLink' : 'headerLink'} key={index} to={headerLinksURL[index]}>{links}</Link></li>
             );
           })
         }

@@ -26,7 +26,7 @@ const Menu = () => {
         <div className="menuContainer">
             <div className="dishContainer">
                 <div className="titleDish">
-                    <h5>Create New Dish</h5>
+                    <h5>Dish List</h5>
                     <FaPlus id='addDishBtn' onClick={handleClick} />
                 </div>
                 <div className="dishSlides manageSlides" id='dishScroll'>
@@ -55,7 +55,7 @@ const Menu = () => {
                             <MenuItem value="other"><em>Other</em></MenuItem>
                         </Select>
                     </FormControl>
-                    <TextField id="priceDish" label="" variant="outlined" placeholder='Price' />
+                    <p>$</p><TextField id="priceDish" label="" variant="outlined" placeholder='Price'/>
                     <button id='createDishBtn'>Create Dish</button>
                 </div>
             </div>

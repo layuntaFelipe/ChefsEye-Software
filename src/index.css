@@ -28,15 +28,19 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.headerLink {
+  text-decoration: none;
+  color: #0B1B35;
+}
+.headerLink:hover{
+  color: #ef233c;
+}
 .headerList li {
   display: inline-block;
   margin: 0 1rem 0 1rem;
   font-weight: 700;
   font-size: 1.1rem;
   cursor: pointer;
-}
-.headerList li:hover {
-  color: #ef233c;
 }
 .profile {
   display: block;
@@ -378,6 +382,12 @@ textarea {
   font-size: small;
   color: #0B1B35;
 }
+p {
+  display: inline;
+  margin: 0 0.3rem 0 0;
+  font-size: 1.5rem;
+  color: gray;
+}
 #priceDish{
   padding: 0.5rem 1rem;
   width: 4rem;
@@ -483,8 +493,9 @@ button{
   font-size: 1rem;
   border-radius: 0.7rem;
   margin: 0 2rem 0 0;
+  cursor: pointer;
 }
-a {
+.downloadBtn {
   outline: none;
   border: none;
   text-decoration: none;
