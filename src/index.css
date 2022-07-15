@@ -520,6 +520,18 @@ p {
   padding: 0.5rem;
 }
 
+.orderInfoCell{
+  background: #C0C0C0;
+  width: 350px;
+  height: 91.43px;
+  margin: 1.6rem;
+  border-radius: 28px;
+}
+
+.ordersSlides {
+  
+}
+
 
 .clientOrderContainer {
   width: 25rem;
