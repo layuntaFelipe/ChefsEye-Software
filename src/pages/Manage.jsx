@@ -1,6 +1,10 @@
 import React from 'react'
 import Header from '../components/Header';
 import ProfitGraph from '../components/ProfitGraph';
+import FavDishMap from '../components/FavDishMap';
+import MenuLayout from '../components/MenuLayout';
+import StorageLayout from '../components/StorageLayout';
+
 
 const Manage = () => {
   return (
@@ -8,10 +12,9 @@ const Manage = () => {
         <Header itemOn={1}/>
         <div className="manageContainer">
           <ProfitGraph/>
-          <ProfitGraph/>
-          <ProfitGraph/>
-          <ProfitGraph/>
-          <ProfitGraph/>
+          <MenuLayout/>
+          <FavDishMap/>
+          <StorageLayout/>
         </div>
     </>
   )

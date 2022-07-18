@@ -470,18 +470,21 @@ p {
 
 /* //////////////////////////////// MANAGE CSS ///////////////////////// */
 
-.profitContainer{
+.manageBoxContainer{
   margin: 4rem 0 8rem 0;
 }
-.profitContainer h3 {
-  font-size: 1.5rem;
-}
-.profitContainerItems{
+.manageBoxLayout{
   width: 1172px;
-  height: 343px;
+  height: 30rem;
   background: #ECEFF0;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
   border-radius: 10px;
+  position: relative;
+  padding: 0 0 0 2rem;
+}
+
+.manageBoxContainer h3 {
+  font-size: 1.5rem;
 }
 
 .manageContainer {
@@ -489,6 +492,20 @@ p {
   width: 75%;
 }
 
+.manageMap {
+  width: 546px;
+  height: 23rem;
+  background: #8D99AE;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  right: 0;
+}
+
+.barStyle {
+  width: 100% !important;
+  height: 30rem !important;
+}
 
 
 /* //////////////////////////////// KITCHEN CSS ///////////////////////// */
@@ -526,12 +543,21 @@ p {
   height: 91.43px;
   margin: 1.6rem;
   border-radius: 28px;
+  cursor: pointer;
+}
+.orderInfoCell:hover{
+  background: #575757;
+  transform: scale(105%);
+}
+
+.ordersGrid {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .ordersSlides {
-  
+  height: 45.5rem !important;
 }
-
 
 .clientOrderContainer {
   width: 25rem;

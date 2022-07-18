@@ -6,6 +6,7 @@ const OrdersList = () => {
      <div className="titleOrders">
       <h5>Orders</h5>
      </div>
+     {/* manageSlides */}
      <div className="ordersGrid manageSlides ordersSlides">
       {/* Cells with order info */}
       <div className="orderInfoCell"></div>
