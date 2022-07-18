@@ -480,7 +480,6 @@ p {
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
   border-radius: 10px;
   position: relative;
-  padding: 0 0 0 2rem;
 }
 
 .manageBoxContainer h3 {
@@ -494,7 +493,7 @@ p {
 
 .manageMap {
   width: 546px;
-  height: 23rem;
+  height: 30rem;
   background: #8D99AE;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
   border-radius: 0 10px 10px 0;
@@ -502,11 +501,50 @@ p {
   right: 0;
 }
 
-.barStyle {
-  width: 100% !important;
-  height: 30rem !important;
+.barStyle{
+  margin-left: 1rem;
 }
 
+.chartBox {
+  width: 850px;
+}
+
+.sideBarProducts {
+  float: right;
+  overflow: auto;
+  background-color: #8D99AE;
+  width: 19.7rem;
+  height: 30rem;
+  border-radius: 0 10px 10px 0;
+  border-left: solid 3px #0B1B35;
+}
+
+.sideBarProducts h4 {
+  color: #eceff0;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-shadow: #0b1b357a 2px 2px 10px;
+}
+
+.sideBarProducts .profitableItem {
+  border: solid 3px #14c03a;
+  width: 16.5rem;
+  height: 5rem;
+}
+.sideBarProducts .nonProfitableItem {
+  border: solid 3px #ef233c;
+  width: 16.5rem;
+  height: 5rem;
+}
+
+.sideBarProducts .profitableItem:hover {
+  background: #14c03969;
+  transform: scale(102%);
+}
+.sideBarProducts .nonProfitableItem:hover {
+  background-color: #ef233b70;
+}
 
 /* //////////////////////////////// KITCHEN CSS ///////////////////////// */
 

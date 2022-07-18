@@ -190,46 +190,71 @@ export const userProfitArray = [
         userLost: 1000,
         mostOrderedItems: [`Salad`],
     },
+      
+]
+
+export const userStorageArray = [
     {
-        id: 8,
-        time: '2022-11-25T21:31:17.178Z',
-        userGain: 8700,
-        userLost: 2300,
-        mostOrderedItems: [`Coke`, `Salad`],
+        id: 1,
+        time: '2022-11-18T21:31:17.178Z',
+        storageReload: 100,
+        storageReloadItems: ['Bread', 'Coke', 'Tomato', 'Chicken'],
+        storageLostItems: [''],
+        storageLost: 0,
+        mostItemStored: ['Tomato']
     },
     {
-        id: 9,
-        time: '2022-11-25T21:31:17.178Z',
-        userGain: 8700,
-        userLost: 2300,
-        mostOrderedItems: [`Coke`, `Salad`],
+        id: 2,
+        time: '2022-11-19T21:31:17.178Z',
+        storageReload: 0,
+        storageReloadItems: [''],
+        storageLostItems: ['Coke'],
+        storageLost: 5,
+        mostItemStored: ['']
     },
     {
-        id: 10,
-        time: '2022-11-25T21:31:17.178Z',
-        userGain: 8700,
-        userLost: 2300,
-        mostOrderedItems: [`Coke`, `Salad`],
+        id: 3,
+        time: '2022-11-20T21:31:17.178Z',
+        storageReload: 0,
+        storageReloadItems: [''],
+        storageLostItems: ['Bread', 'Tomato', 'Chicken'],
+        storageLost: 15,
+        mostItemStored: ['']
     },
     {
-        id: 11,
-        time: '2022-11-25T21:31:17.178Z',
-        userGain: 8700,
-        userLost: 2300,
-        mostOrderedItems: [`Coke`, `Salad`],
+        id: 4,
+        time: '2022-11-21T21:31:17.178Z',
+        storageReload: 0,
+        storageReloadItems: [''],
+        storageLostItems: ['Bread', 'Coke', 'Tomato', 'Chicken'],
+        storageLost: 23,
+        mostItemStored: ['']
     },
     {
-        id: 12,
-        time: '2022-11-25T21:31:17.178Z',
-        userGain: 8700,
-        userLost: 2300,
-        mostOrderedItems: [`Coke`, `Salad`],
+        id: 5,
+        time: '2022-11-22T21:31:17.178Z',
+        storageReload: 12,
+        storageReloadItems: ['Bread', 'Tomato', 'Chicken'],
+        storageLostItems: ['Chicken'],
+        storageLost: 0,
+        mostItemStored: ['Bread']
     },
     {
-        id: 13,
-        time: '2022-11-25T21:31:17.178Z',
-        userGain: 8700,
-        userLost: 2300,
-        mostOrderedItems: [`Coke`, `Salad`],
+        id: 6,
+        time: '2022-11-23T21:31:17.178Z',
+        storageReload: 0,
+        storageReloadItems: [''],
+        storageLostItems: ['Bread', 'Tomato', 'Chicken'],
+        storageLost: 9,
+        mostItemStored: ['']
+    },
+    {
+        id: 7,
+        time: '2022-11-24T21:31:17.178Z',
+        storageReload: 0,
+        storageReloadItems: [''],
+        storageLostItems: ['Bread', 'Coke', 'Tomato'],
+        storageLost: 5,
+        mostItemStored: ['']
     },
 ]

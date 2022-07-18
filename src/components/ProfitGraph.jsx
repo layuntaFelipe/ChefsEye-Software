@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { userProfitArray } from '../data.js';
 import { Chart as ChartJS} from 'chart.js/auto';
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 const ProfitGraph = () => {
 
@@ -9,9 +9,16 @@ const ProfitGraph = () => {
     labels: userProfitArray.map((data) => data.id),
     datasets: [{
       label: "Profit per day",
-      data: userProfitArray.map((data) => data.userGain - data.userLost),
-      backgroundColor: userProfitArray.map((data) => (data.userGain-data.userLost)<0 ? "#ef233c" : "#14c03a"),
-      borderColor: userProfitArray.map((data) => (data.userGain-data.userLost)<0 ? "rgb(239, 35, 60, 0.4)" : "rgb(20, 192, 58, 0.4)"),
+      data: userProfitArray.map((data) => data.userGain),
+      backgroundColor: "#14c03a",
+      borderColor: "rgb(20, 192, 58, 0.4)",
+      borderWidth: 3,
+      borderRadius: 6,
+    },{
+      label: "Lost per day",
+      data: userProfitArray.map((data) => data.userLost),
+      backgroundColor: "#ef233c",
+      borderColor: "rgb(239, 35, 60, 0.4)",
       borderWidth: 3,
       borderRadius: 6,
     }],
@@ -21,8 +28,15 @@ const ProfitGraph = () => {
     <div className='manageBoxContainer'>
      <h3>Profit Graph</h3>
      <div className='manageBoxLayout'>
-      <div>
-        <Line className='barStyle' data={userData} />
+      <div className="sideBarProducts">
+        <h4>Most Profitable Products</h4>
+        <div className="orderInfoCell profitableItem"></div>
+        <div className="orderInfoCell profitableItem"></div><hr/>
+        <h4>Last Profitable Products</h4>
+        <div className="orderInfoCell nonProfitableItem"></div>
+      </div>
+      <div className='chartBox'>
+        <Bar className='barStyle' data={userData} options={{aspectRatio: 1.75}} />
       </div>
      </div>
     </div>
