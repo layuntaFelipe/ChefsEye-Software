@@ -490,6 +490,34 @@ p {
   margin: auto;
   width: 75%;
 }
+.manageContainer button {
+  margin: 0;
+}
+.gridThreeColumn {
+  display: grid;
+  grid-template-columns: 47% 6% 47%;
+  column-gap: 0;
+}
+.listButtons {
+  margin-top: 8rem;
+}
+.listButton {
+  background-color: #14c03a;
+  margin: 3px 0 !important;
+}
+.leftMenu {
+  height: 30rem;
+  border-radius: 10px 0 0 10px;
+  padding: 0 4rem;
+}
+.rigthMenu {
+  height: 30rem;
+  border-radius: 0 10px 10px 0;
+  padding: 0 4rem;
+}
+.menuLayoutSlides{
+  height: 28.5rem !important;
+}
 
 .favFoodSide{
   float: left;
